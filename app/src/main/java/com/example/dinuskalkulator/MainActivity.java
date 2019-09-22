@@ -12,50 +12,43 @@ import java.time.Instant;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int counter = 0;
-    private TextView number;
-    private Button buttonPlus;
-    private Button buttonMinus;
-    private Button btnResult;
+    private Button btnCircle;
+    private Button btnSquare;
+    private Button btnTriangle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        number = (TextView) findViewById(R.id.counter);
-        buttonPlus = (Button) findViewById(R.id.buttonPlus);
-        buttonMinus = (Button) findViewById(R.id.buttonMinus);
-        btnResult = (Button) findViewById(R.id.proses);
+        btnCircle = (Button) findViewById(R.id.btnCircle);
+        btnSquare = (Button) findViewById(R.id.btnSquare);
+        btnTriangle = (Button) findViewById(R.id.btnTriangle);
 
-        buttonPlus.setOnClickListener(new View.OnClickListener() {
+        btnCircle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                counter++;
-                number.setText(Integer.toString(counter));
+                moveActivity("circle");
             }
         });
 
-        buttonMinus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (counter!=0)
-                    counter--;
-                number.setText(Integer.toString(counter));
-            }
-        });
 
-        btnResult.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                resultActivity();
-            }
-        });
+
     }
 
-    protected void resultActivity() {
-        Intent intent = new Intent(this, ResultActivity.class);
-        intent.putExtra("number", Integer.toString(counter));
+    protected void moveActivity(String name) {
+        Intent intent = new Intent(this, MainActivity.class);
+        switch (name) {
+            case "circle":
+                intent = new Intent(this, CircleActivity.class);
+                break;
+            case "rectangle":
+                intent = new Intent(this, RectangleActivity.class);
+                break;
+            case "triangle":
+                intent = new Intent(this, TriangleActivity.class);
+                break;
+        };
         startActivity(intent);
     }
 }

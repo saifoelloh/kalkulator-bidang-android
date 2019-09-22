@@ -4,6 +4,17 @@
     <string name="counter">0</string>
     <string name="increment">plus</string>
     <string name="decrement">minus</string>
+    <string name="circle">circle</string>
+    <string name="circleTitle">Circle Calculator</string>
+    <string name="circleHint">Radius</string>
+    <string name="rectangle">rectangle</string>
+    <string name="rectangleTitle">Rectangle Calculator</string>
+    <string name="rectangleHint1">Base</string>
+    <string name="rectangleHint2">Height</string>
+    <string name="triangle">triangle</string>
+    <string name="triangleTitle">Triangle Calculator</string>
+    <string name="triangleHint1">Height</string>
+    <string name="triangleHint2">Base</string>
     <string name="submit">submit</string>
     <string name="proses">proses</string>
     <string name="kembali">kembali</string>

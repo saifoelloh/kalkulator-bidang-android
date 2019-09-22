@@ -10,36 +10,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:padding="20dp">
-        <TextView
-            android:id="@+id/counter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/counter"
-            android:textSize="80sp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <Button
-                android:id="@+id/buttonPlus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/increment"/>
-            <Button
-                android:id="@+id/buttonMinus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/decrement"/>
-        </LinearLayout>
 
         <Button
-            android:id="@+id/proses"
+            android:id="@+id/btnCircle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/proses"/>
+            android:text="@string/circle"/>
+
+        <Button
+            android:id="@+id/btnSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rectangle"/>
+
+        <Button
+            android:id="@+id/btnTriangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/triangle"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
