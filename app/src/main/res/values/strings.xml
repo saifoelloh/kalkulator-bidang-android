@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DinusKalkulator</string>
+    <string name="activityResult">Result Activity</string>
+    <string name="counter">0</string>
+    <string name="increment">plus</string>
+    <string name="decrement">minus</string>
+    <string name="submit">submit</string>
+    <string name="proses">proses</string>
+    <string name="kembali">kembali</string>
+</resources>
