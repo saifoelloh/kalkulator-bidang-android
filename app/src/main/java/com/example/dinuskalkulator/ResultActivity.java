@@ -8,16 +8,25 @@ import android.widget.TextView;
 
 public class ResultActivity extends AppCompatActivity {
 
-    private String hasil;
-    private TextView counter;
+    private TextView tvAreaa;
+    private TextView tvPerimeter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        hasil = getIntent().getStringExtra("number");
 
-        counter = findViewById(R.id.txtHasil);
-        counter.setText(hasil);
+        tvAreaa = findViewById(R.id.area);
+        tvPerimeter = findViewById(R.id.perimeter);
+
+        Bundle bundle = (Bundle) getIntent().getExtras();
+        Float area = (Float) bundle.getFloat("area");
+        Float perimeter = (Float) bundle.getFloat("perimeter");
+
+        String msgArea = "area : "+area.toString();
+        String msgPerimeter = "perimeter : "+perimeter.toString();
+
+        tvAreaa.setText(msgArea);
+        tvPerimeter.setText(msgPerimeter);
     }
 }

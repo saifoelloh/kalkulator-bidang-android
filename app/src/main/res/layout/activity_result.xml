@@ -11,18 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/activityResult"
-        android:textSize="45sp"/>
+        android:textSize="30sp"
+        android:layout_marginVertical="50dp"/>
 
     <TextView
         android:id="@+id/area"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="35sp"/>
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/perimeter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="35sp"/>
+        android:textSize="20sp"/>
 
 </LinearLayout>
