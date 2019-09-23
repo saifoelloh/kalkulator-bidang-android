@@ -16,6 +16,6 @@
     <string name="triangleHint1">Height</string>
     <string name="triangleHint2">Base</string>
     <string name="submit">submit</string>
-    <string name="proses">proses</string>
+    <string name="proses">process</string>
     <string name="kembali">kembali</string>
 </resources>
