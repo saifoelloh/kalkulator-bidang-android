@@ -14,10 +14,15 @@
         android:textSize="45sp"/>
 
     <TextView
-        android:id="@+id/txtHasil"
+        android:id="@+id/area"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/counter"
-        android:textSize="100sp"/>
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/perimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"/>
 
 </LinearLayout>
