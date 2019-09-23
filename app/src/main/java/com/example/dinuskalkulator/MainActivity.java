@@ -13,7 +13,7 @@ import java.time.Instant;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnCircle;
-    private Button btnSquare;
+    private Button btnRectangle;
     private Button btnTriangle;
 
     @Override
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnCircle = (Button) findViewById(R.id.btnCircle);
-        btnSquare = (Button) findViewById(R.id.btnSquare);
+        btnRectangle = (Button) findViewById(R.id.btnSquare);
         btnTriangle = (Button) findViewById(R.id.btnTriangle);
 
         btnCircle.setOnClickListener(new View.OnClickListener() {
@@ -32,7 +32,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnRectangle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveActivity("rectangle");
+            }
+        });
 
+        btnTriangle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                moveActivity("triangle");
+            }
+        });
 
     }
 
